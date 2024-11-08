@@ -8,8 +8,8 @@ import { useEffect, useState } from "react";
 import Loading from "./components/loading-screen";
 import { auth } from "./firebase";
 import { reset } from "styled-reset";
-import TaskMenu from "./routes/task-menu";
-import Task from "./routes/task";
+import PythonMenu from "./routes/python-menu";
+import Python from "./routes/python";
 import ProtectedRoute from "./components/auth-protected-route";
 
 const router = createBrowserRouter([
@@ -26,12 +26,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/task",
-        element: <TaskMenu />,
+        path: "/python",
+        element: <PythonMenu />,
       },
       {
-        path: "/task/:fileID",
-        element: <Task />,
+        path: "/python/:fileID",
+        element: <Python />,
       },
     ],
   },

@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
-import TaskMarkdownRender from "../components/task-markdown-render";
+import PythonMarkdownRender from "../components/python-markdown-render";
 import styled from "styled-components";
-import TaskReadWrite from "../components/task-readWrite";
+import PythonReadWrite from "../components/python-readWrite";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -14,17 +14,17 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-export default function Task() {
+export default function Python() {
   const readOnly = useLocation().state.readOnly;
 
   return (
     <>
       {readOnly ? (
         <Wrapper>
-          <TaskMarkdownRender></TaskMarkdownRender>
+          <PythonMarkdownRender></PythonMarkdownRender>
         </Wrapper>
       ) : (
-        <TaskReadWrite></TaskReadWrite>
+        <PythonReadWrite></PythonReadWrite>
       )}
     </>
   );

@@ -43,7 +43,7 @@ const HomeBox = styled.div`
   cursor: pointer;
 `;
 
-const TaskBox = styled.div`
+const PythonBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,12 +153,12 @@ export default function Navigationbar() {
             <BarText>Home</BarText>
           </LinkNoDecoration>
         </HomeBox>
-        <TaskBox>
-          <LinkNoDecoration to="/task">
+        <PythonBox>
+          <LinkNoDecoration to="/python">
             <CgAttachment />
-            <BarText>Task</BarText>
+            <BarText>Python</BarText>
           </LinkNoDecoration>
-        </TaskBox>
+        </PythonBox>
       </ContentBox>
       <FooterBox>
         <LogOutBox onClick={handleLogOutEvent}>

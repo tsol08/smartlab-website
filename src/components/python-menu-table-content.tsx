@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TaskType } from "../routes/task-menu";
+import { PythonType } from "../routes/python-menu";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
@@ -87,12 +87,12 @@ function getStarWithDifficulty(difficulty: number) {
   }
 }
 
-export default function TaskMenuTableContent({
+export default function PythonMenuTableContent({
   fileID,
   fileName,
   difficulty,
   readOnly,
-}: TaskType) {
+}: PythonType) {
   return (
     <Wrapper>
       <Header>

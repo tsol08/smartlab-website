@@ -20,7 +20,7 @@ const Box = styled.div`
   padding: 10px;
 `;
 
-function taskText(fileID: string) {
+function pythonText(fileID: string) {
   if (fileID) {
     const problem: { [key: string]: string } = {
       extra1:
@@ -60,13 +60,13 @@ function taskText(fileID: string) {
   }
 }
 
-export default function TaskMarkdownRender() {
+export default function PythonMarkdownRender() {
   const fileID = useParams().fileID;
   const [markdown, setMarkdown] = useState<string>();
 
   useEffect(() => {
     if (fileID) {
-      setMarkdown(taskText(fileID));
+      setMarkdown(pythonText(fileID));
     }
   });
 

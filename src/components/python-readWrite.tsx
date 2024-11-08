@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import TaskMarkdownRender from "./task-markdown-render";
-import { CodeEditorForCoding } from "./task-code-editor";
+import PythonMarkdownRender from "./python-markdown-render";
+import { CodeEditorForCoding } from "./python-code-editor";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -10,10 +10,10 @@ const Wrapper = styled.div`
 
   height: 100vh;
 `;
-export default function TaskReadWrite() {
+export default function PythonReadWrite() {
   return (
     <Wrapper>
-      <TaskMarkdownRender></TaskMarkdownRender>
+      <PythonMarkdownRender></PythonMarkdownRender>
       <CodeEditorForCoding></CodeEditorForCoding>
     </Wrapper>
   );

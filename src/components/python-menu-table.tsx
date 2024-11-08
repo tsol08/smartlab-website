@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TaskMenuTableContent from "./task-menu-table-content";
+import PythonMenuTableContent from "./python-menu-table-content";
 
 const Wrapper = styled.div`
   margin: 20px 20px 0px 20px;
@@ -44,12 +44,12 @@ const Content = styled.div`
   }
 `;
 
-type TaskMenuTableProps = {
+type PythonMenuTableProps = {
   week: string;
   value: object;
 };
 
-export default function TaskMenuTable({ week, value }: TaskMenuTableProps) {
+export default function PythonMenuTable({ week, value }: PythonMenuTableProps) {
   if (value instanceof Array) {
     return (
       <Wrapper>
@@ -57,8 +57,8 @@ export default function TaskMenuTable({ week, value }: TaskMenuTableProps) {
           <WeekTitle>Level {week}</WeekTitle>
         </TitleBox>
         <Content>
-          {value.map((task) => (
-            <TaskMenuTableContent key={task.fileID} week={week} {...task} />
+          {value.map((python) => (
+            <PythonMenuTableContent key={python.fileID} week={week} {...python} />
           ))}
         </Content>
       </Wrapper>
