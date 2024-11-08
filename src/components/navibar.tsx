@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { CgAttachment, CgHome, CgProfile } from "react-icons/cg";
+import { CgHome, CgProfile } from "react-icons/cg";
+import { SiCplusplus } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
 import { auth } from "../firebase";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -166,13 +168,13 @@ export default function Navigationbar() {
         </HomeBox>
         <PythonBox>
           <LinkNoDecoration to="/python">
-            <CgAttachment />
+            <FaPython />
             <BarText>Python</BarText>
           </LinkNoDecoration>
         </PythonBox>
         <CBox>
           <LinkNoDecoration to="/c">
-            <CgAttachment />
+            <SiCplusplus />
             <BarText>C/C++</BarText>
           </LinkNoDecoration>
         </CBox>
