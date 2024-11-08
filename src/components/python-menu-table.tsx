@@ -19,7 +19,7 @@ const TitleBox = styled.div`
   margin-bottom: 10px;
 `;
 
-const WeekTitle = styled.h1`
+const LevelpTitle = styled.h1`
   font-size: 24px;
   font-weight: 700;
 `;
@@ -45,20 +45,20 @@ const Content = styled.div`
 `;
 
 type PythonMenuTableProps = {
-  week: string;
+  levelp: string;
   value: object;
 };
 
-export default function PythonMenuTable({ week, value }: PythonMenuTableProps) {
+export default function PythonMenuTable({ levelp, value }: PythonMenuTableProps) {
   if (value instanceof Array) {
     return (
       <Wrapper>
         <TitleBox>
-          <WeekTitle>Level {week}</WeekTitle>
+          <LevelpTitle>Level {levelp}</LevelpTitle>
         </TitleBox>
         <Content>
           {value.map((python) => (
-            <PythonMenuTableContent key={python.fileID} week={week} {...python} />
+            <PythonMenuTableContent key={python.fileID} levelp={levelp} {...python} />
           ))}
         </Content>
       </Wrapper>
