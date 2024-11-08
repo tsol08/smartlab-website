@@ -10,6 +10,8 @@ import { auth } from "./firebase";
 import { reset } from "styled-reset";
 import PythonMenu from "./routes/python-menu";
 import Python from "./routes/python";
+import C from "./routes/c";
+import CMenu from "./routes/c-menu";
 import ProtectedRoute from "./components/auth-protected-route";
 
 const router = createBrowserRouter([
@@ -30,8 +32,16 @@ const router = createBrowserRouter([
         element: <PythonMenu />,
       },
       {
+        path: "/c",
+        element: <CMenu />,
+      },
+      {
         path: "/python/:fileID",
         element: <Python />,
+      },
+      {
+        path: "c/:fileID",
+        element: <C />,
       },
     ],
   },

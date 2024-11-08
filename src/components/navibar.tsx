@@ -54,6 +54,17 @@ const PythonBox = styled.div`
   cursor: pointer;
 `;
 
+const CBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+`;
+
 const BarText = styled.span`
   margin-left: 5px;
   font-size: 16px;
@@ -159,6 +170,12 @@ export default function Navigationbar() {
             <BarText>Python</BarText>
           </LinkNoDecoration>
         </PythonBox>
+        <CBox>
+          <LinkNoDecoration to="/c">
+            <CgAttachment />
+            <BarText>C/C++</BarText>
+          </LinkNoDecoration>
+        </CBox>
       </ContentBox>
       <FooterBox>
         <LogOutBox onClick={handleLogOutEvent}>
