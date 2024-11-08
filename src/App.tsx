@@ -36,6 +36,11 @@ const router = createBrowserRouter([
         element: <CMenu />,
       },
       {
+        path: "/chat",
+        element: <CMenu />
+        // element: <Chat />
+      },
+      {
         path: "/python/:fileID",
         element: <Python />,
       },
