@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCswosRKTPXZVEGYgm-Gnhiqi7ts0av7t0",
-  authDomain: "smartlab-website-df441.firebaseapp.com",
-  projectId: "smartlab-website-df441",
-  storageBucket: "smartlab-website-df441.firebasestorage.app",
-  messagingSenderId: "995928828228",
-  appId: "1:995928828228:web:8badedc306136af5504f11",
-  measurementId: "G-H3NSQB32VJ"
+  apiKey: "AIzaSyAxaiT8kQijY0ExFLhMV8WamEmIKL8SG0I",
+  authDomain: "smartlab-website-d51a9.firebaseapp.com",
+  projectId: "smartlab-website-d51a9",
+  storageBucket: "smartlab-website-d51a9.firebasestorage.app",
+  messagingSenderId: "1049522423033",
+  appId: "1:1049522423033:web:30c373c7a3c5c308380e28",
+  measurementId: "G-G21JC4416K"
 };
 
 const app = initializeApp(firebaseConfig);
