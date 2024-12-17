@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { CgHome, CgProfile } from "react-icons/cg";
 import { SiCplusplus } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
+import { MdInfoOutline } from "react-icons/md";
 import { auth } from "../firebase";
-import { IoChatboxEllipsesOutline } from "react-icons/io5";
+// import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
 
 const Wrapper = styled.div`
@@ -45,7 +46,15 @@ const HomeBox = styled.div`
 
   cursor: pointer;
 `;
+const InfoBox = styled.div`
+  display : flex;
+  align-items: center;
+  justify-content: center;
 
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+`
 const PythonBox = styled.div`
   display: flex;
   align-items: center;
@@ -68,16 +77,16 @@ const CBox = styled.div`
   cursor: pointer;
 `;
 
-const ChatBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// const ChatBox = styled.div`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-  font-size: 16px;
-  font-weight: 600;
+//   font-size: 16px;
+//   font-weight: 600;
 
-  cursor: pointer;
-`;
+//   cursor: pointer;
+// `;
 
 const BarText = styled.span`
   margin-left: 5px;
@@ -178,6 +187,12 @@ export default function Navigationbar() {
             <BarText>Home</BarText>
           </LinkNoDecoration>
         </HomeBox>
+        <InfoBox>
+          <LinkNoDecoration to="/info">
+            <MdInfoOutline />
+            <BarText>Info</BarText>
+          </LinkNoDecoration>
+        </InfoBox>
         <PythonBox>
           <LinkNoDecoration to="/python">
             <FaPython />
@@ -190,12 +205,12 @@ export default function Navigationbar() {
             <BarText>C/C++</BarText>
           </LinkNoDecoration>
         </CBox>
-        <ChatBox>
+        {/* <ChatBox>
           <LinkNoDecoration to="/chat">
             <IoChatboxEllipsesOutline />
             <BarText>Chat</BarText>
           </LinkNoDecoration>
-        </ChatBox>
+        </ChatBox> */}
       </ContentBox>
       <FooterBox>
         <LogOutBox onClick={handleLogOutEvent}>

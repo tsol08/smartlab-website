@@ -11,6 +11,7 @@ import { reset } from "styled-reset";
 import PythonMenu from "./routes/python-menu";
 import Python from "./routes/python";
 import C from "./routes/c";
+import Info from "./routes/info";
 import CMenu from "./routes/c-menu";
 import ProtectedRoute from "./components/auth-protected-route";
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/python",
         element: <PythonMenu />,
+      },
+      {
+        path: "/info",
+        element: <Info />
       },
       {
         path: "/c",

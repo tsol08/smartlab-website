@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export default function Home() {
+  export default function Home() {
   const Back = styled.div`
   height:100vh;
   width:200vh;
@@ -14,7 +14,7 @@ export default function Home() {
   background-color:transparent;
   `
 
-  const Pulsegun = styled.img`
+  const Pulsegun = styled.img`np
   width:60vh;
   height:80vh;
   `
