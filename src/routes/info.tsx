@@ -40,8 +40,8 @@ const NoticeItem = styled.li`
 `;
 
 const notices = [
-  { id: 1, title: "첫 번째 공지사항", content: "첫 번째 공지사항 내용입니다." },
-  { id: 2, title: "두 번째 공지사항", content: "두 번째 공지사항 내용입니다." },
+  { id: 1, title: "첫 번째 공지사항", content: "" },
+  { id: 2, title: "두 번째 공지사항", content: "" },
 ];
 
 function NoticeBoard() {
